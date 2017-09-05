@@ -1,0 +1,79 @@
+.section2
+  width 100%
+  height auto
+  background-color #a59da0
+  padding-top 17px
+  padding-bottom 17px
+  display flex
+  justify-content center
+  align-items center
+
+  .grafic-position
+    width 1300px
+    display flex
+    flex-flow row wrap
+    justify-content flex-start
+    align-items center
+
+    .info-block
+      display flex
+      flex-direction row
+      justify-content space-around
+      align-items center
+      margin 10px 0 10px 10px
+
+      img
+        width 22px
+        height 22px
+        margin-right 24px
+
+      p
+        color #ffffff
+        font-family "DINPro"
+        font-size 12px
+        font-weight 500
+        line-height 14px
+
+        a
+          color #ffffff
+          &:hover
+            color #ffc932
+
+@media(min-width: 768px)
+  .section2
+    .grafic-position
+      flex-direction row
+      justify-content space-between
+      align-items center
+
+      .info-block
+        max-width 278px
+        margin 0
+        img
+          width 32px
+          height 32px
+          margin-right 22px
+
+        p
+          max-width: 224px;
+          height: 32px;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 15px;
+
+@media(min-width: 1248px)
+  .section2
+    .grafic-position
+      .info-block
+        max-width 500px
+        p
+          max-width 415px
+          height 18px
+          color #ffffff
+          font-family "DINPro"
+          font-size 14px
+          font-weight 500
+          line-height 18px
+        br
+          display none
+

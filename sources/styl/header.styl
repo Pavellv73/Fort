@@ -1,0 +1,127 @@
+header
+  width 100%
+  height auto
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+  padding 20px 10px
+  border-bottom 4px solid  #f4b32c
+
+  .logo-img
+    width 45%
+    height auto
+    display flex
+    justify-content flex-start
+    align-items center
+
+    img
+      width 88px
+      height 32px
+
+    .logo-text
+      display none
+
+  .contact
+    width 55%
+    height auto
+    display flex
+    flex-direction column
+    justify-content flex-end
+    align-items center
+
+    p
+      width 100%
+      height 12px
+      color #000000
+      font-family "DINPro"
+      font-size 9px
+      font-weight 400
+      line-height 12px
+      text-align right
+
+    .contact-content
+      width 100%
+      display flex
+      flex-direction row
+      justify-content flex-end
+      align-items center
+      a
+        display flex
+        flex-direction row
+        justify-content center
+        align-items center
+
+      img
+        width 13px
+        height 13px
+        margin-right 12px
+
+      p
+        height 26px
+        color #000000
+        font-family "DINPro"
+        font-size 16px
+        font-weight 500
+        line-height 26px
+        text-align right
+
+@media(min-width: 768px)
+  header
+    padding 17px 33px
+    .logo-img
+      img
+        width 134px
+        height 49px
+
+    .contact
+      p
+        height 20px
+        font-size 14px
+        line-height 20px
+
+      .contact-content
+        img
+          width: 20px;
+          height: 20px;
+        p
+          font-size 22px
+          line-height: 26px;
+
+@media(min-width: 1248px)
+  header
+    padding 17px 135px
+    .logo-img
+      width 55%
+      img
+        width 134px
+        height 49px
+      .logo-text
+        display flex
+        flex-direction column
+        justify-content flex-end
+        align-items flex-start
+        color #000000
+        font-family "DINPro"
+        font-size 14px
+        font-weight 500
+        line-height 18px
+        margin-left 32px
+
+        span
+          font-weight 400
+    .contact
+      width 45%
+      p
+        height 20px
+        font-size 14px
+        line-height 20px
+
+      .contact-content
+        img
+          width: 20px;
+          height: 20px;
+        p
+          font-size 22px
+          line-height: 26px;
+

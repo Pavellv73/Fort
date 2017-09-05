@@ -1,0 +1,19 @@
+footer.footer.cnt
+    div.footer-content
+        div.footer-info
+            p © ООО «Форт-Инвест» 2017. Все права защищены
+            p ОГРН 1137328003064
+
+        form(action="mailer.php" method="post")
+            p Быстрая консультация
+
+            input.inp(placeholder="Контактный телефон" name="phone" required)
+            button.button(type="submit")
+                p Перезвоните нам
+                img(src="img/arrow.svg")
+
+div.hiddensection
+    div#thnx.thnks
+        h2 Спасибо за заявку
+        p Наши менеджеры перезвонят вам в ближайшее время
+    a#thnx-a(href="#thnx" class="fbx")

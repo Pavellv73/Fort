@@ -1,0 +1,54 @@
+section.section1.cnt
+    div.sec1-content
+        div.sec1-slider
+            div.slider-position
+                img.prevArrow(src="img/arrow-prew.png")
+                img.nextArrow(src="img/arrow-next.png")
+                section.center.slider
+
+                    div.imgslide
+                        div.slidinline
+                            div.img-slide
+                                img(src="img/food/1.png")
+                            div.slide-text
+                                p Благородное дерево, пленка ПВХ-патина
+
+                    div.imgslide
+                        div.slidinline
+                            div.img-slide
+                                img(src="img/food/2.png")
+                            div.slide-text
+                                p Голубая лагуна, пластик
+
+
+                    div.imgslide
+                        div.slidinline
+                            div.img-slide
+                                img(src="img/food/3.png")
+                            div.slide-text
+                                p Городской антураж, пленка ПВХ металлик
+
+
+        div.info-content
+            div.text-content
+                p Хотите продавать мебель? Зарабатывайте с нами!
+                p Станьте нашим дилером!
+
+                h1 Кухни
+                   <br>
+                    span  ОПТОМ!
+
+                h3 Напрямую с фабрики-изготовителя.
+
+                h2 Получите
+                    span  прямо сейчас
+                    |  оптовые цены <br> и скидку 10% на ваш заказ!
+
+            form(action="mailer.php" method="post")
+                input.inp(placeholder="Ваше имя" name="name" required)
+                input.inp(placeholder="Email" name="email" required)
+                input.inp(placeholder="Контактный телефон" name="phone" required)
+                button.button(type="submit")
+                    p Получить прайс-лист
+                    img(src="img/arrow.svg")
+

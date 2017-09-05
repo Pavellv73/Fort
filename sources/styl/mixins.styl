@@ -1,0 +1,212 @@
+h()
+  columns = 0 1 2 3 4 5 6 7 8 9 10 11 12
+  for col in columns
+    .h-{col}
+      width (col/columns[-1]*100) + '%'
+      flex-basis auto
+      box-sizing border-box
+      display block
+      padding-left 6px
+      padding-right 6px
+  for col in columns
+    .h-offset-{col}
+      margin-left: (col/columns[-1]*100) + '%'
+
+t()
+  columns = 0 1 2 3 4 5 6 7 8 9 10 11 12
+  for col in columns
+    .t-{col}
+      width (col/columns[-1]*100) + '%'
+      flex-basis auto
+      box-sizing border-box
+      display block
+      padding-left 12px
+      padding-right 12px
+  for col in columns
+    .t-offset-{col}
+      margin-left: (col/columns[-1]*100) + '%'
+
+d()
+  columns = 0 1 2 3 4 5 6 7 8 9 10 11 12
+  for col in columns
+    .d-{col}
+      width (col/columns[-1]*100) + '%'
+      flex-basis auto
+      box-sizing border-box
+      display block
+      padding-left 24px
+      padding-right 24px
+  for col in columns
+    .d-offset-{col}
+      margin-left: (col/columns[-1]*100) + '%'
+
+d-screen = 1248px
+t-screen = 768px
+h-screen = 320px
+
+.cnt
+  box-sizing: border-box;
+  padding: 20px 19px;
+  @media(min-width: t-screen)
+    padding: 17px 33px;
+  @media(min-width: d-screen)
+    padding 10px 40px
+    margin 0 auto
+
+.cnt.row
+  width 100%
+  flex-basis 100%
+  flex-grow 1
+  display flex
+  flex-wrap wrap
+  flex-direction row
+  justify-content flex-start
+  align-content flex-start
+  > *
+    box-sizing border-box
+  h()
+  @media(min-width: t-screen)
+    t()
+  @media(min-width: d-screen)
+    d()
+
+.button
+  width 100%
+  max-width 478px
+  height 54px
+  border-radius 4px
+  background-color #ffc932
+  color #000000
+  font-family "DINPro"
+  font-size 16px
+  font-weight 500
+  line-height 21px
+  border none
+  cursor pointer
+  margin-top 7px
+  display flex
+  flex-direction row-reverse
+  justify-content center
+  align-items center
+  padding 0 26px
+  position relative
+  &:hover
+    background-color #f4b32c
+    transition all 0.3s
+
+  p
+    width 238px
+    max-width 296px
+    margin 0 auto
+
+  img
+    position absolute
+    top 18px
+    left 25px
+    width 25px
+    height 20px
+
+.inp
+  width 100%
+  max-width 478px
+  height 54px
+  border-radius 4px
+  border 1px solid #dddfe0
+  background-color #ffffff
+  color #949ba4
+  font-family "DINPro"
+  font-size 16px
+  font-weight 400
+  line-height 21px
+  padding-left 8px
+  margin 7px 0
+
+
+////---PLACEHOLDERS---////
+input[type='text']::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+input[type='text']::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+input[type='text']:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+input[type='text']:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+input[type='text']:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input[type='text']:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input[type='text']:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input[type='text']:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+textarea::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+textarea:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+textarea:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+textarea:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+textarea:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}

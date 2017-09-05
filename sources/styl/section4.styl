@@ -1,0 +1,377 @@
+.section4
+  width 100%
+  height auto
+
+  .sec4-content
+    width 100%
+    height auto
+    display flex
+    justify-content center
+    align-items center
+    flex-direction column
+
+    .control-tabs
+      width 300px
+      height auto
+      display flex
+      flex-flow row wrap
+      justify-content space-between
+      align-items center
+
+      .tabs-position
+        display flex
+        justify-content space-around
+        align-items center
+        flex-flow row wrap
+
+        .tab
+          width 127px
+          height 30px
+          display flex
+          justify-content center
+          align-items center
+          border-radius 2px
+          border 1px solid #ffc932
+          background-color transparent
+          cursor pointer
+          color #000000
+          font-family "DINPro"
+          font-size 12px
+          font-weight 500
+          line-height 15px
+          text-align center
+          margin 5px 0
+          transition all ease-out 0.3s
+
+          &:active
+            background-color #ffc932
+
+        .tab-active
+          background-color #ffc932
+
+    .sec4-slider
+      width 100%
+      display flex
+      justify-content center
+      align-items center
+      padding 20px 10px
+
+      .slider-none
+        height 0
+        overflow hidden
+
+      .slider-position
+        position relative
+        min-width: 282px;
+        max-width: 500px;
+        box-shadow 4px 6px 10px #eaecec
+        border-radius 2px
+        border 1px solid #dddfe0
+        background-color #ffffff
+
+        .imgslide
+          width 272px
+          height auto
+          overflow hidden
+
+          img
+            width 100%
+            height auto
+            padding 5px
+
+        .control
+          width 100%
+          height auto
+          display flex
+          flex-direction row
+          padding 5px 5px
+
+          .control-text
+            width 50%
+            p
+              height 22px
+              color #000000
+              font-family "DINPro"
+              font-size 12px
+              font-weight 500
+              line-height 22px
+
+          .control-arrows
+            width 50%
+            display flex
+            flex-direction row
+            justify-content flex-end
+            align-items center
+
+            img
+              margin 0 5px
+
+@media(min-width: 768px)
+  .section4
+
+    .sec4-content
+
+      .control-tabs
+        width 577px
+        flex-flow row
+        justify-content center
+        align-items center
+        max-width 577px
+
+        .tabs-position
+          width 577px
+          flex-flow row
+
+          .tab
+            max-width 250px
+            min-width 106px
+            width auto
+            height 38px
+            border 1px solid #dddfe0
+            background-color #f2f2f2
+            display flex
+            justify-content center
+            align-items center
+            border-radius 0 20px 0 0
+            margin 0
+            padding 0 35px
+            font-family "DINPro"
+            color #a59da0
+            font-size 14px
+            font-weight 500
+            line-height 18px
+            text-transform uppercase
+            position relative
+            margin-left -10px
+
+            &:active
+              background-color #ffffff
+              color #f4b32c
+
+            &:nth-child(1)
+              margin-left 0
+              z-index 4
+            &:nth-child(2)
+              z-index 3
+
+            &:nth-child(3)
+              z-index 2
+
+            &:nth-child(4)
+              z-index 1
+
+          .tab-active
+            background-color #ffffff
+            color #f4b32c
+            border-bottom none
+            z-index 5!important
+
+      .sec4-slider
+
+        padding 0 0
+
+        .slider-none
+          height 0
+          overflow hidden
+
+        .slider-position
+          position relative
+          min-width: 282px;
+          max-width: 577px;
+          box-shadow 4px 6px 10px #eaecec
+          border-radius 2px
+          border 1px solid #dddfe0
+          border-top none
+          background-color #ffffff
+
+          .imgslide
+            width 572px
+            height 451px
+            overflow hidden
+
+            img
+              width 572px
+              height 451px
+              padding 5px
+
+          .control
+            width 100%
+            height auto
+            display flex
+            flex-direction row
+            padding 16px 5px 21px 5px
+
+            .control-text
+              width 50%
+              p
+                font-size 18px
+                font-weight 500
+                line-height 22px
+
+            .control-arrows
+              width 50%
+              display flex
+              flex-direction row
+              justify-content flex-end
+              align-items center
+
+              img
+                margin 0 5px
+
+@media(min-width: 1248px)
+  .section4
+    display flex
+    justify-content center
+
+    .sec4-content
+      max-width 1300px
+
+      .control-tabs
+        width 100%
+        max-width 100%
+        flex-flow row
+        justify-content flex-start
+        align-items center
+
+        .tabs-position
+          width 593px
+          height auto
+
+          .tab
+            max-width 250px
+            min-width 106px
+            width auto
+            height 38px
+            border 1px solid #dddfe0
+            background-color #f2f2f2
+            display flex
+            justify-content center
+            align-items center
+            border-radius 0 20px 0 0
+            margin 0
+            padding 0 42px
+            font-family "DINPro"
+            color #a59da0
+            font-size 14px
+            font-weight 500
+            line-height 18px
+            text-transform uppercase
+            position relative
+            margin-left -20px
+
+            &:active
+              background-color #ffffff
+              color #f4b32c
+            &:after
+              content ""
+              position absolute
+              bottom -2px
+              left 1px
+              width 100%
+              height 2px
+              background-color #ffffff
+              z-index 6
+
+            &:nth-child(1)
+              margin-left 0
+              z-index 4
+            &:nth-child(2)
+              z-index 3
+
+            &:nth-child(3)
+              z-index 2
+
+            &:nth-child(4)
+              z-index 1
+
+          .tab-active
+            background-color #ffffff
+            color #f4b32c
+            border-bottom none
+            z-index 5!important
+
+      .sec4-slider
+        box-shadow 4px 6px 10px #f6f6f6
+        border-radius 0 2px 2px
+        border 1px solid #dddfe0
+        background-color #ffffff
+
+        .slider-none
+          height 0
+          overflow hidden
+
+          .control-text
+            display none
+            height 0
+            overflow hidden
+
+          .control-arrows
+            display none
+            height 0
+            overflow hidden
+
+
+
+        .slider-position
+          position relative
+          display flex
+          justify-content center
+          max-width 1170px
+          width 800px
+          height 528px
+          box-shadow none
+          border-radius none
+          border none
+          background-color none
+          padding 0 0
+
+
+          .slider
+            width 800px
+
+            .imgslide
+              width 800px
+              height 508px
+              overflow hidden
+              display flex
+              justify-content center
+
+              img
+                width auto
+                height 508px
+                padding 5px
+
+          .control
+            width 100%
+            height auto
+            display flex
+            flex-direction row
+            padding 16px 5px 21px 5px
+
+            .control-text
+              width auto
+              position: absolute;
+              top: -30px;
+              right: -20%;
+
+              p
+                font-size 18px
+                font-weight 500
+                line-height 22px
+
+            .control-arrows
+              display flex
+              flex-direction row
+              justify-content space-between
+              align-items center
+              position absolute
+              top 43%
+              left -15%
+              width 130%
+
+              img
+                margin 0 5px
+                cursor pointer
+
+
+
